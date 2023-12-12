@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+.firstpage-container {
+  font-family: serif;
+  margin: 3px 3px;
+}
+
+main {
+  height: 100vh;
+
+  .header-1 {
+    align-items: baseline;
+  }
+
+  .welcome {
+    color: rgb(72, 72, 72);
+    font-size: 1.4rem;
+  }
+  .bannerImg {
+    width: 100%;
+    height: 400px;
+    padding: 1rem;
+    object-fit: contain;
+  }
+
+  .searchBar {
+    width: 20rem;
+    padding: 0.25rem;
+  }
+
+  .bookList-ul {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media only screen and (min-width: 868px) {
+    .bookList-ul {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.searchResults {
+  font-size: 2rem;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 6px;
+  right: 6px;
+  left: 6px;
+  background-color: rgb(201, 199, 199);
+  text-align: center;
+  z-index: 0;
+}
+
+.footer p a {
+  padding: 2%;
+  margin: 5%;
+}
